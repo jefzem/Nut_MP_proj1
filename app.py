@@ -25,6 +25,21 @@ def traitement():
     all_usagers = cur.execute('SELECT nom, prenom FROM usagers').fetchall()
     return jsonify(all_usagers)
    # return render_template('resultat.html',nom='JFG', list_nom=all_usagers)    
+@app.route('/marketplace')
+def marketplace():
+    print('marketplace')
+    return render_template('MarketPlace.html')
+
+@app.route('/api_usagers')
+def api_usagers():
+    print('api_usagers')
+    return render_template('hello.html')
+
+@app.route('/api_entreprises')
+def api_entreprises():
+    print('api_entreprises')
+    return render_template('hello.html')
+
 
 @app.route('/hello', methods=['POST'])
 def hello():

@@ -24,14 +24,14 @@ def favicon():
 def marketplace():
     print('marketplace')
     return render_template('MarketPlace.html')
-@app.route('/api_usagers')
+@app.route('/apiusagers')
 def api_usagers():
-    print('api_usagers')
+    print('apiusagers')
     return render_template('api_usagers.html')
 
-@app.route('/api_entreprises')
+@app.route('/apientreprises')
 def api_entreprises():
-    print('api_entreprises')
+    print('apientreprises')
     return render_template('api_entreprises.html')
 
 @app.route('/simulations')

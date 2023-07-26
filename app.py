@@ -32,10 +32,10 @@ def marketplace():
     print('marketplace')
     return render_template('MarketPlace.html')
 
-@app.route('/api_usagers1')
-def api_usagers1():
-    print('api_usagers1')
-    return render_template('api_usagers1.html')
+@app.route('/api_usagers')
+def api_usagers():
+    print('api_usagers')
+    return render_template('api_usagers.html')
 
 @app.route('/api_entreprises')
 def api_entreprises():
@@ -46,7 +46,7 @@ def api_entreprises():
 def simulations():
     print('simulations')
     return render_template('simulations.html')
-##### API Marketplace ##############
+########## API Marketplace ##############
 @app.route('/info_contenants_V1')
 def info_contenants_V1():
     print('info contenants V1')
@@ -79,7 +79,7 @@ def Contenants_enregistres_parfab_V1():
     #return render_template('API/Contenants_enregistrés_V1.html')
 
 
-Contenants_enregistres_parfab_V1
+
 ##### API Usagers ###########
 
 #### API  Entreprises ########

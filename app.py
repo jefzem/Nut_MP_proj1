@@ -25,10 +25,7 @@ def marketplace():
     print('marketplace')
     return render_template('MarketPlace.html')
 
-@app.route('/api_usagers')
-def api_usagers():
-    print('api_usagers')
-    return render_template('api_usagers.html')
+
 
 @app.route('/api_entreprises')
 def api_entreprises():

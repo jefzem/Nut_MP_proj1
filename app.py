@@ -17,14 +17,7 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
-@app.route('/traitement')
-def traitement():
-    conn = sqlite3.connect('PILCv0.5.db')
-    ##conn.row_factory = dict_factory  <= rajoute le nom des colonnes
-    cur = conn.cursor()
-    all_usagers = cur.execute('SELECT nom, prenom FROM usagers').fetchall()
-    return jsonify(all_usagers)
-   # return render_template('resultat.html',nom='JFG', list_nom=all_usagers)
+
 
 
 @app.route('/marketplace')
@@ -46,6 +39,8 @@ def api_entreprises():
 def simulations():
     print('simulations')
     return render_template('simulations.html')
+
+
 ########## API Marketplace ##############
 @app.route('/info_contenants_V1')
 def info_contenants_V1():

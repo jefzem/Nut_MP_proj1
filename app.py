@@ -26,13 +26,11 @@ def marketplace():
     return render_template('MarketPlace.html')
 @app.route('/apiusagers')
 def api_usagers():
-    print('apiusagers')
-    return render_template('Api_usagers.html')
+    return render_template('Api_Usagers.html')
 
 @app.route('/apientreprises')
 def api_entreprises():
-
-    return render_template('Api_entreprises.html')
+    return render_template('Api_Entreprises.html')
 
 @app.route('/simulations')
 def simulations():

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}
+<H1> Exemples API Associées aux Contenants </H1>
+
+<p>Lister tous les contenants enregistrés
+<button onclick="window.location.href = 'Contenants_enregistres_V1';">Liste de tous les contenants enregistrés </button>
+</p>
+
+<p>Lister tous les contenants d'un fabricants choisi
+
+
+<form action="{{url_for('Contenants_enregistres_parfab_V1')}}" method="POST">
+    <p>
+        <!-- Champ de type "text" -->
+        <label for="nom">Nom du fabricant: </label>
+        <input type="text" name="nom" id="nom">
+    </p>
+
+    <p>
+        <!-- Bouton d'envoi du formulaire -->
+        <input type="submit" value="Envoyer le formulaire" required>
+        <!-- <button type="submit">Envoyer le formulaire</button> -->
+    </p>
+</form>
+
+</p>
+
+
+
+
+{% endblock %}

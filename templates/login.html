@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{{url_for('traitement')}}" method="POST">
+    <p>
+        <!-- Champ de type "text" -->
+        <label for="nom">Nom : </label>
+        <input type="text" name="nom" id="nom">
+    </p>
+    <p>
+        <!-- Champ de type "password" -->
+        <label for="mdp">Mot de passe : </label>
+        <input type="password" name="mdp" id="mdp" required>
+    </p>
+
+    <p>
+        <!-- Bouton d'envoi du formulaire -->
+        <input type="submit" value="Envoyer le formulaire" required>
+        <!-- <button type="submit">Envoyer le formulaire</button> -->
+    </p>
+</form>
+</body>
+</html>

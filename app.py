@@ -32,10 +32,10 @@ def marketplace():
     print('marketplace')
     return render_template('MarketPlace.html')
 
-@app.route('/api_usagers')
-def api_usagers():
-    print('api_usagers')
-    return render_template('api_usagers.html')
+@app.route('/api_usagers1')
+def api_usagers1():
+    print('api_usagers1')
+    return render_template('api_usagers1.html')
 
 @app.route('/api_entreprises')
 def api_entreprises():

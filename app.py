@@ -18,8 +18,6 @@ def favicon():
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
-
-
 @app.route('/marketplace')
 def marketplace():
     print('marketplace')
